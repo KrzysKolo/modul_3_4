@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/FontsFree-Net-Proxima-Nova-Black.otf');
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+	box-sizing: border-box;
+}
+/*-------- Przyciski ---------------*/
+[class^="button"] {
+   width: 200px;
+    height: 50;
+    margin: 65px auto 0;
+    border-radius: 25px;
+    border: 1px;
+    font-size: 11px;
+    line-height: 50px;
+    @include uppercase;
+    @include letterSpecing2;
+    @include textCenter
+}
+.button {
+    background-color: $colorPinkTekst;
+    @include buttonShadow;
+}
+.button:hover,
+.button-2 {
+    background-color: $button-2Background;
+    color: $colorPinkTekst;
+}
+.button-2:hover {
+    background-color: $button-2HoverBackground;
+    border: $button-2Background 1px solid;
+    color: $colorWhiteTekst;
+    box-shadow: #c8c8c8 2px 2px 3px;
+}
+.button-4 {
+    margin: 40px auto 0 auto;
+    background-color: $buttonBackgroundBasic;
+    color: $colorWhiteTekstfff;
+}
+.button-3 {
+    margin: -25px auto 0 auto;
+    background-color: $button-3Background;
+    color: $colorBasicTekst;
+}
+/*-------------- Tekst dekoracyjny --------------*/
+.decorativeText{
+    font-family: 'Proxima Nova';       /*tekst MACHE w header */
+}
+[class^="boldText"] {
+    @include boldText;                 /* pogrubiony tekst na stronie */
+}
+.boldText {
+    text-shadow: #fff 1px 1px 1px;
+}
+.boldText-pink{
+    color: $colorPinkTekst;
+}
+.bigText {
+    font-size: $bigText;                   /* powiększony tekst na stronie */
+}
+/*-------------- Ustawienia strony --------------------*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: $colorBasicTekst;
+    font-size: $basicText;
+}
+.kolor {
+    color: $colorPinkTekst;                    /* kolor tekstu różowy */
+}
+article {
+    background-color: $button-2Background;
+}
+.main,
+.prizes {
+    height: 795px;
+    @include szerokosc1;
+    @include wysrodkowanie;
+}
+.joinUs,
+.quoter,
+.container,
+.news,
+.footer {
+    @include szerokosc3;
+    @include wysrodkowanie;
+}
+hr{
+    @include hr;
+}
+.decorativeBelt {                       /*trójkątny pasek pod header */
+    @include decorativeBelt;
+}
+                                                                    /*SEKCJA ZE ZDJĘCIEM*/
+header {
+    background-color: #040404;
+}
+.main {
+    background-image: url('../images/tlo.jpg');
+    background-repeat: no-repeat;
+ }
+.container,
+.nav li a {
+    color: $colorWhiteTekst;
+    text-decoration: none;
+}
+.nav li a:hover {
+    color: $colorPinkTekst;
+    @include boldText;
+    @include transition;
+}
+.container {
+    font-size: 19px;
+}
+.content{
+    margin: 200px 94px 0 94px;
+    @include textCenter;
+}
+.logo {
+    margin-left: 16px;
+    float: left;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    display: inline-block;
+    font-size: $navText;
+    @include boldText700;
+    padding-right: 16px;
+}
+.hero,
+.shortInfo {
+    @include BoldText100;
+}
+.hero {
+    font-size: 35px;
+    @include uppercase;
+    letter-spacing: $LetterSpacing3;
+}
+.upperPart {
+    line-height: 19px;
+    padding-top: 32px;
+}
+
+.shortInfo {
+    font-size: $basicText;
+    line-height: 1.8rem;
+    letter-spacing: 2.5px;
+}
+                                                                /*SEKCJA ABOUTE */
+section,
+article {
+    background-color: $button-3Background;
+    margin: 0;
+    padding: 0;
+ }
+.aboute {
+    @include szerokosc2;
+    height: 607px;
+    padding-top: 65px;
+    @include wysrodkowanie;
+} 
+.powerfull,
+.macbook{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 0;
+    margin: 0;
+}
+.powerfull {
+    margin-left: 150px;
+    padding-top: 44px;
+}
+.heading {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 40px;
+}
+.abouteWidth {
+    width: 390px;
+}
+.lorem {
+    font-size: $boxText;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+ }
+ .przycisk {
+     @include uppercase;
+     margin-top: 47px;
+     line-height: 30px;
+ }
+ .size {
+     padding-left: 15px;
+     font-size: $Text;
+ }
+                                                                /*SEKCJA OUR SERVICES */
+ .sekcja-2 {
+     background: $button-2Background;
+     height: 700px;
+ }
+ .ourServices{
+    margin-top: -55px;
+    margin-left: auto;
+    margin-right: auto;
+    @include szerokosc3;
+ }
+ .container .content2 {
+     color: $colorBasicTekst;
+     width: 100%;
+     @include textCenter;
+     padding-top: 145px;
+}
+.service .box .elipsa {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: #c8c8c8 1px solid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.service .box {
+    @include textCenter;
+    margin: 90px 20px 20px 20px;
+}
+.service .box h2 {
+    font-size: $boxText;
+    @include uppercase;
+    margin-top: 23px;
+}
+                                                                /* JOIN US */
+.sekcja-3{
+    background-color: $buttonBackgroundBasic;
+    height: 200px;
+    line-height: 200px;
+}
+.sekcja-3 .joinUs {
+    @include szerokosc3;
+    @include wysrodkowanie;
+    
+}
+.sekcja-3 .joinUs p{
+    font-size: $Text;
+    color: $colorWhiteTekst;
+    padding-left: 20px;
+    letter-spacing: $LetterSpacing2;
+    @include boldText100;
+}
+
+                                                                /* QUOTER */
+.quoter,
+.news {
+    @include textCenter;
+}
+.quoter{
+    height: 876px;
+    padding-top: 147px;
+}
+.boxy {
+    margin-top: 96px;
+}
+.box-1 {
+    height: 467px;
+    width: 260px;
+    margin: 0 15px;
+    background-color: $colorWhiteTekst;
+}
+.gora {
+    height: 149px;
+    background-color: $colorBasicTekst;
+    color: $colorWhiteTekst;
+    font-size: 20px;
+}
+.pink {
+    background-color: $colorPinkTekst;
+}
+.smallText{
+    font-size: $smallText;
+}
+.tekst {
+    padding-top:33px;
+}
+.dol {
+    line-height: 30px;
+    padding: 40px 0 0 0;
+ }
+                                                                /*  NEWS */
+.sekcja-5 {
+    background-color: $colorWhiteTekst;
+}
+.news {
+    padding-top: 150px;
+}
+.gallery {
+    padding-top: 90px;
+}
+.event{
+    width: 360px;
+    background-color: $button-3Background;
+    margin: 0 15px 60px 15px;
+}
+.photo {
+    position: relative;
+}
+.triangle {
+    height: 11px;
+    width: 360px;
+    position: relative;
+        right: 0px;
+        top: -11px;
+    padding: 0;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0) 50%, #ed145b 50%);
+}
+.smallText-event {
+    text-align: left;
+    padding: 29px 21px;
+}
+.gallery .event .smallText h2 {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.gallery .event .smallText p {
+    line-height: 20px;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include transition;
+    color: $colorBasicTekst;
+    @include textCenter;
+    cursor: pointer;
+    @include wysrodkowanie;
+}
+.photo .fa {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 15px;
+    opacity: 0;
+    @include transition;
+  }
+  .photo:hover .layer {
+    background: rgba(237, 20, 91, .9);
+  }
+.photo:hover .fa {
+    opacity: 1;
+}
+.show {
+    padding: 60px 0;
+}
+.show i {
+    font-size: $Text;
+}
+                                                                /*  FOOTER  */
+footer {
+    height: 145px;
+    background-color: #2b2b2b;
+}
+.footer {
+    line-height: 145px;
+    color: $colorWhiteTekst;
+}

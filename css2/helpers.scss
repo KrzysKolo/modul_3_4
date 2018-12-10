@@ -1,0 +1,60 @@
+@mixin uppercase {
+    text-transform: uppercase;
+}
+@mixin textCenter {
+    text-align: center;
+}
+
+@mixin button {
+    width: 200px;
+    height: 50;
+    margin: 65px auto 0;
+    border-radius: 25px;
+    border: 1px;
+    font-size: 11px;
+    line-height: 50px;
+    @include uppercase;
+    @include letterSpecing2;
+    @include textCenter
+}
+@mixin hr {
+    width: 200px;
+    height: 2px;
+    background-color: #ed145b;
+    border-color:  #ed145b;
+    margin: 38px auto;
+}
+@mixin decorativeBelt {
+    height: 41px;
+    width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ed145b 50%, #f4f4f4 50%);
+}
+@mixin buttonShadow{
+    box-shadow: #fff -1px 1px 2px;
+}
+@mixin boldText{
+    font-weight: bold; 
+}
+@mixin boldText100{
+    font-weight: 100; 
+}
+@mixin boldText700{
+    font-weight: 700; 
+}
+@mixin transition {
+    transition: .8s;
+}
+@mixin wysrodkowanie {
+    margin: 0 auto;
+}
+@mixin szerokosc1 {
+    width: 2000px;
+}
+@mixin szerokosc2 {
+    width: 1770px;
+}
+@mixin szerokosc3 {
+    width: 1170px;
+}

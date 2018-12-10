@@ -1,0 +1,400 @@
+/*font-family: 'Lato', sans-serif;*/
+                                                                /* GLOBAL */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/FontsFree-Net-Proxima-Nova-Black.otf');
+}
+/*-------- Przyciski ---------------*/
+[class^="button"] {
+    width: 200px;
+    height: 50;
+    margin: 65px auto 0;
+    border-radius: 25px;
+    border: 1px;
+    font-size: 11px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.button {
+    background-color: #ed145b;
+    box-shadow: #fff -1px 1px 2px;
+}
+.button:hover,
+.button-2 {
+    background-color: #fff;
+    color: #ed145b;
+}
+.button-2:hover {
+    background-color: rgba(237, 20, 91, .6);
+    border: #fff 1px solid;
+    color: #fff;
+    box-shadow: #c8c8c8 2px 2px 3px;
+}
+.button-4 {
+    margin: 40px auto 0 auto;
+    background-color: #ed145b;
+    color: #fff;
+}
+.button-3 {
+    margin: -25px auto 0 auto;
+    background-color: #f4f4f4;
+    color: #5a5a5a;
+}
+/*-------------- Tekst dekoracyjny --------------*/
+.decorativeText{
+    font-family: 'Proxima Nova';       /*tekst MACHE w header */
+}
+[class^="boldText"] {
+    font-weight: bold;                 /* pogrubiony tekst na stronie */
+}
+.boldText {
+    text-shadow: #fff 1px 1px 1px;
+}
+.boldText-pink{
+    color: #ed145b;
+}
+.bigText {
+    font-size: 38px;                   /* powiększony tekst na stronie 8*/
+}
+/*------------- Flex ---------------------------*/
+.flex-display {
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.flex-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+}
+.flex-3 {
+	flex: 3;
+}
+/*-------------- Ustawienia strony --------------------*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: #5a5a5a;
+}
+.kolor {
+    color: #ed145b;                    /* kolor tekstu różowy */
+}
+article {
+    background-color: #fff;
+}
+.main,
+.prizes {
+    height: 795px;
+    width: 2000px;
+    margin: 0 auto;
+}
+.joinUs,
+.quoter,
+.container,
+.news,
+.footer {
+    width: 1170px;
+    margin: 0 auto;
+}
+hr{
+    width: 200px;
+    height: 2px;
+    background-color: #ed145b;
+    border-color:  #ed145b;
+    margin: 38px auto;
+}
+.decorativeBelt {                       /*trójkątny pasek pod header */
+    height: 41px;
+    width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ed145b 50%, #f4f4f4 50%);
+}
+                                                                    /*SEKCJA ZE ZDJĘCIEM*/
+header {
+    background-color: #040404;
+}
+.main {
+    background-image: url('../images/tlo.jpg');
+    background-repeat: no-repeat;
+ }
+.container,
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav li a:hover {
+    color: #ed145b;
+    font-weight: bold;
+    transition: .8s;
+}
+.container {
+    font-size: 19px;
+}
+.content{
+    margin: 200px 94px 0 94px;
+    text-align: center;
+}
+.logo {
+    margin-left: 16px;
+    float: left;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 16px;
+}
+.hero,
+.shortInfo {
+    font-weight: 100;
+}
+.hero {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.upperPart {
+    line-height: 19px;
+    padding-top: 32px;
+}
+
+.shortInfo {
+    font-size: 17px;
+    line-height: 1.8rem;
+    letter-spacing: 2.5px;
+}
+                                                                /*SEKCJA ABOUTE */
+section,
+article {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+ }
+.aboute {
+    width: 1770px;
+    height: 607px;
+    padding-top: 65px;
+    margin: 0 auto;
+} 
+.powerfull,
+.macbook{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 0;
+    margin: 0;
+}
+.powerfull {
+    margin-left: 150px;
+    padding-top: 44px;
+}
+.heading {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 40px;
+}
+.abouteWidth {
+    width: 390px;
+}
+.lorem {
+    font-size: 11px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+ }
+ .przycisk {
+     text-transform: uppercase;
+     margin-top: 47px;
+     line-height: 30px;
+ }
+ .size {
+     padding-left: 15px;
+     font-size: 30px;
+ }
+                                                                /*SEKCJA OUR SERVICES */
+ .sekcja-2 {
+     background: #fff;
+     height: 700px;
+ }
+ .ourServices{
+    margin-top: -55px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+ }
+ .container .content2 {
+     color: #5a5a5a;
+     width: 100%;
+     text-align: center;
+     padding-top: 145px;
+}
+.service .box .elipsa {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: #c8c8c8 1px solid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.service .box {
+    text-align: center;
+    margin: 90px 20px 20px 20px;
+}
+.service .box h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+                                                                /* JOIN US */
+.sekcja-3{
+    background-color: #ed145b;
+    height: 200px;
+    line-height: 200px;
+}
+.sekcja-3 .joinUs {
+    width: 1170px;
+    margin: 0 auto;
+    
+}
+.sekcja-3 .joinUs p{
+    font-size: 30px;
+    color: #fff;
+    
+    padding-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 100px;
+}
+
+                                                                /* QUOTER */
+.quoter,
+.news {
+    text-align: center;
+}
+.quoter{
+    height: 876px;
+    padding-top: 147px;
+}
+.boxy {
+    margin-top: 96px;
+}
+.box-1 {
+    height: 467px;
+    width: 260px;
+    margin: 0 15px;
+    background-color: #fff;
+}
+.gora {
+    height: 149px;
+    background-color: #5a5a5a;
+    color: #fff;
+    font-size: 20px;
+}
+.pink {
+    background-color: #ed145b;
+}
+.smallText{
+    font-size: 12px;
+}
+.tekst {
+    padding-top:33px;
+}
+.dol {
+    line-height: 30px;
+    padding: 40px 0 0 0;
+ }
+                                                                /*  NEWS */
+.sekcja-5 {
+    background-color: #fff;
+}
+.news {
+    padding-top: 150px;
+}
+.gallery {
+    padding-top: 90px;
+}
+.event{
+    width: 360px;
+    background-color: #f4f4f4;
+    margin: 0 15px 60px 15px;
+}
+.photo {
+    position: relative;
+}
+.triangle {
+    height: 11px;
+    width: 360px;
+    position: relative;
+        right: 0px;
+        top: -11px;
+    padding: 0;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0) 50%, #ed145b 50%);
+}
+.smallText-event {
+    text-align: left;
+    padding: 29px 21px;
+}
+.gallery .event .smallText h2 {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+.gallery .event .smallText p {
+    line-height: 20px;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .8s;
+    color: #5a5a5a;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.photo .fa {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 15px;
+    opacity: 0;
+    transition: .8s;
+  }
+  .photo:hover .layer {
+    background: rgba(237, 20, 91, .9);
+  }
+.photo:hover .fa {
+    opacity: 1;
+}
+.show {
+    padding: 60px 0;
+}
+.show i {
+    font-size: 30px;
+}
+                                                                /*  FOOTER  */
+footer {
+    height: 145px;
+    background-color: #2b2b2b;
+}
+.footer {
+    line-height: 145px;
+    color: #fff;
+}
